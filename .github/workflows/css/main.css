@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorprimary: lab(59.38% 51.81 68.17);
+  --ffprimary: sans-serif;
+  --colorsecondary:#faebd7;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  color: var(--colorprimary);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  border: transparent;
+  padding: 0.5rem 1rem;
+  background-color: var(--colorprimary);
+  border-radius: 1rem;
+  color: #f5f5f5;
+  white-space: nowrap;
+}
+
+img {
+  display: block;
+  border-radius: 2rem;
+}
+
+body {
+  font-family: var(--ffprimary);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.header_wrap {
+  background-color: var(--colorsecondary);
+  padding-block: 0.5rem;
+}
+.header_wrap img {
+  border-radius: 0rem;
+  width: auto;
+  height: 3rem;
+}
+.header_wrap .header_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header_wrap .header_inner ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+.header_wrap .header_inner a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+.header_wrap .header_inner a:hover {
+  color: var(--colorprimary);
+}
+.header_wrap .header_inner li .first_btn {
+  color: white;
+  padding: 0.75rem 1.5rem;
+}
+.header_wrap .header_inner .first_btn:hover {
+  color: #f5f5f5;
+  background-color: color-mix(in srgb, var(--colorprimary), white 20%);
+  transition: all 0.3s ease-in-out;
+}
+
+.banner_inner {
+  position: relative;
+}
+.banner_inner img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  border-radius: 0rem;
+}
+.banner_inner figcaption {
+  padding-block: 15rem;
+  color: white;
+}
+.banner_inner figcaption a {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.btn_primary:hover {
+  border-radius: 10rem 50rem;
+  transition: all 0.8s ease-in-out;
+  background-color: color-mix(in srgb, var(--colorprimary), white 20%);
+}
+
+.btn_secondary {
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.btn_secondary:hover {
+  border-radius: 10rem 50rem;
+  transition: all 0.8s ease-in-out;
+  background-color: color-mix(in srgb, var(--colorprimary), white 20%);
+  border: 1px solid var(--colorprimary);
+}
+
+.third_btn {
+  color: var(--colorprimary);
+  border: 1px solid var(--colorprimary);
+}
+
+.third_btn:hover {
+  color: white;
+}
+
+.hero_caption {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.service_one {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  padding-block: 2rem;
+}
+.service_one figcaption {
+  padding-block: 5rem;
+  padding-inline: 2rem;
+}
+.service_one figcaption p {
+  margin-bottom: 2rem;
+}
+
+.section_2 {
+  background-color: var(--colorsecondary);
+  padding-block: 2rem;
+}
+.section_2 .service_two {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.section_2 .service_two ul {
+  list-style: none;
+  color: var(--colorprimary);
+  line-height: 2rem;
+}
+
+.service_three {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  padding-block: 2rem;
+  align-items: center;
+}
+.service_three ul {
+  list-style: none;
+  color: var(--colorprimary);
+  line-height: 2rem;
+}
+.service_three .figcaption {
+  padding-inline: 1rem;
+}
+
+.section_4 {
+  background-color: var(--colorsecondary);
+  padding-block: 2rem;
+}
+.section_4 .service_four {
+  display: flex;
+  align-items: center;
+}
+.section_4 .service_four figcaption {
+  padding-left: 2rem;
+}
+.section_4 .service_four ul {
+  list-style: none;
+  color: var(--colorprimary);
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer_wrap {
+  background-color: lab(15.16% 0 0);
+}
+.footer_wrap .footer_inner {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.footer_wrap .footer_inner h2 {
+  color: #878585;
+  font-size: 16px;
+  padding-block: 1rem;
+}
+.footer_wrap .footer_inner ul {
+  display: flex;
+  padding-block: 1rem;
+  gap: 2rem;
+  list-style: none;
+  color: #878585;
+}/*# sourceMappingURL=main.css.map */
